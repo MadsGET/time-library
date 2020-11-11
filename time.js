@@ -1,20 +1,31 @@
 const time =
 {
+	days:
+		[
+			{ name: 'Monday',		id: 1 },
+			{ name: 'Tuesday',		id: 1 },
+			{ name: 'Wednesday',	id: 1 },
+			{ name: 'Thursday',		id: 1 },
+			{ name: 'Friday',		id: 1 },
+			{ name: 'Saturday',		id: 1 },
+			{ name: 'Sunday',		id: 1 },
+		],
+
 	months:
-	[
-		{ name: 'January'	, id: 1,	length: 31 },
-		{ name: 'Feburary'	, id: 2,	length: 31 },
-		{ name: 'March'		, id: 3,	length: 31 },
-		{ name: 'April'		, id: 4,	length: 31 },
-		{ name: 'May'		, id: 5,	length: 31 },
-		{ name: 'June'		, id: 6,	length: 31 },
-		{ name: 'July'		, id: 7,	length: 31 },
-		{ name: 'August'	, id: 8,	length: 31 },
-		{ name: 'September'	, id: 9,	length: 31 },
-		{ name: 'October'	, id: 10,	length: 31 },
-		{ name: 'November'	, id: 11,	length: 31 },
-		{ name: 'Desember'	, id: 12,	length: 31 },
-	],
+		  [
+			{ name: 'January',		id: 1,	length: 31 },
+			{ name: 'Feburary',		id: 2,	length: 31 },
+			{ name: 'March',		id: 3,	length: 31 },
+			{ name: 'April',		id: 4,	length: 31 },
+			{ name: 'May',			id: 5,	length: 31 },
+			{ name: 'June',			id: 6,	length: 31 },
+			{ name: 'July',			id: 7,	length: 31 },
+			{ name: 'August',		id: 8,	length: 31 },
+			{ name: 'September',	id: 9,	length: 31 },
+			{ name: 'October',		id: 10,	length: 31 },
+			{ name: 'November',		id: 11,	length: 31 },
+			{ name: 'December',		id: 12,	length: 31 },
+		  ],
 
 	// Returns minutes as hour and minutes.
 	convertMinutes(value) {
