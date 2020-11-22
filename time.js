@@ -2,13 +2,13 @@ const time =
 {
 	days:
 		[
+			{ name: 'Sunday',		id: 0 },
 			{ name: 'Monday',		id: 1 },
-			{ name: 'Tuesday',		id: 1 },
-			{ name: 'Wednesday',	id: 1 },
-			{ name: 'Thursday',		id: 1 },
-			{ name: 'Friday',		id: 1 },
-			{ name: 'Saturday',		id: 1 },
-			{ name: 'Sunday',		id: 1 },
+			{ name: 'Tuesday',		id: 2 },
+			{ name: 'Wednesday',	id: 3 },
+			{ name: 'Thursday',		id: 4 },
+			{ name: 'Friday',		id: 5 },
+			{ name: 'Saturday',		id: 6 },
 		],
 
 	months:
