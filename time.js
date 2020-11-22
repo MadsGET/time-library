@@ -50,8 +50,8 @@ const time =
 	createAnalogTimeString()
 	{
 		// Clock time
-		let timeCurrent = new Date().toLocaleTimeString('en');
-		let timeSuffix = timeCurrent[timeCurrent.length-2] + timeCurrent[timeCurrent.length - 1];
+		let time = new Date().toLocaleTimeString('en');
+		let timeSuffix = time.slice(8, 11).toLocaleLowerCase();
 		return time.substring(0, time.length -6) + timeSuffix;
 	},
 
