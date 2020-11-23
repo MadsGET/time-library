@@ -47,12 +47,14 @@ const time =
 	},
 
 	// Readable clock format. (Ex: 8:36pm)
-	createAnalogTimeString()
+	createAnalogTimeString(date = new Date())
 	{
 		// Clock time
-		let time = new Date().toLocaleTimeString('en');
-		let timeSuffix = time.slice(8, 11).toLocaleLowerCase();
-		return time.substring(0, time.length -6) + timeSuffix;
+		let time = date.toLocaleTimeString('en');
+		let timeString = time.substring(0, time.length - 6);
+		let timeSuffix = (timeString.length == 4) ?  time.slice(8, 11).toLocaleLowerCase() : time.slice(9, 11).toLocaleLowerCase();
+		return timeString + timeSuffix;
+
 	},
 
 	// Creates a simple time stamp (ex: 0130).
