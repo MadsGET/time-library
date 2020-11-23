@@ -54,7 +54,6 @@ const time =
 		let timeString = time.substring(0, time.length - 6);
 		let timeSuffix = (timeString.length == 4) ?  time.slice(8, 11).toLocaleLowerCase() : time.slice(9, 11).toLocaleLowerCase();
 		return timeString + timeSuffix;
-
 	},
 
 	// Creates a simple time stamp (ex: 0130).
